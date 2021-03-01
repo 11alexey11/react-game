@@ -1,0 +1,21 @@
+.footer {
+    height: 5vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #455A64;
+    color: #FFFFFF;
+}
+
+.gitHub {
+    text-decoration: none;
+}
+
+.gitHub:hover {
+    color: #00BCD4;
+}
+
+.gitHub:visited {
+    color: #00BCD4;
+}
+

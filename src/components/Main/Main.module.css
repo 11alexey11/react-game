@@ -1,0 +1,7 @@
+.main {
+    height: 85vh;
+    background: #CFD8DC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
