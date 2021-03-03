@@ -1,0 +1,24 @@
+.header {
+    height: 10vh;
+    background: #607D8B;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 15px;
+    height: 100%;
+}
+
+.navbarItem {
+    text-decoration: none;
+    padding: 0 10px;
+    cursor: pointer;
+    color: #FFFFFF;
+}
+
+.navbarItem:hover,
+.activeLink {
+    color: #00BCD4;
+}

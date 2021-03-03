@@ -1,0 +1,62 @@
+.volumeContainer {
+    height: 300px;
+    width: 250px;
+    background: #607D8B;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    justify-content: space-evenly;
+    position: relative;
+}
+
+.title,
+.soundContainer,
+.musicContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.onOff {
+    display: flex;
+    justify-content: center;
+}
+
+.btnTrigger {
+    margin: 0 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: #FFFFFF;
+}
+
+.btnClose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #FFFFFF;
+}
+
+.icon {
+    text-decoration: none;
+    color: #000000;
+}
+
+.icon:hover,
+.btnTrigger:hover {
+    color: #00BCD4;
+}
+
+.volume {
+    width: 26px;
+}

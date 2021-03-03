@@ -1,0 +1,50 @@
+.gameSettingsContainer {
+    height: 300px;
+    width: 350px;
+    background: #607D8B;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+    position: relative;
+    align-items: center;
+}
+
+.settingsItem {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+}
+
+h4 {
+    text-align: center;
+}
+
+.btnClose {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 15px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #FFFFFF;
+}
+
+.icon:hover {
+    color: #00BCD4;
+}
+
+.icon {
+    text-decoration: none;
+    color: #000000;
+}
