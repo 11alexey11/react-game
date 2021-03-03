@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import Header from './Header';
-import { showHomeActionCreator } from '../../redux/home-reducer';
+// import { showHomeActionCreator } from '../../redux/home-reducer';
 
 class HeaderContainer extends React.Component {
     render() {
@@ -9,17 +9,17 @@ class HeaderContainer extends React.Component {
     }
 }
 
-const mapStateToProps = (state) => ({
-    isHome: state.homePage.isHome
-});
+// const mapStateToProps = (state) => ({
+//     isHome: state.homePage.isHome
+// });
 
-const mapDispatchToProps = (dispatch) => {
-    return {
-        showHomePage: (isHome) => {
-            dispatch(showHomeActionCreator(isHome));
-        },
+// const mapDispatchToProps = (dispatch) => {
+//     return {
+//         showHomePage: (isHome) => {
+//             dispatch(showHomeActionCreator(isHome));
+//         },
         
-    }
-};
+//     }
+// };
 
-export default connect(mapStateToProps, mapDispatchToProps)(HeaderContainer);
+export default connect(null, null)(HeaderContainer);

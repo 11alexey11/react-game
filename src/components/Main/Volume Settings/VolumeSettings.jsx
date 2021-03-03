@@ -3,13 +3,13 @@ import { NavLink } from 'react-router-dom';
 import styles from './VolumeSettings.module.css';
 
 const VolumeSettings = (props) => {
-    const onButtonSoundClick = (volumeClick = props.soundValue, triggerSound = props.triggerSound, clickElement = props.clickElement) => {
-        clickElement(volumeClick, props.isSound);
-        triggerSound(!props.isSound);
+    const onButtonSoundClick = () => {
+        props.clickElement(props.soundValue, props.isSound);
+        props.triggerSound(!props.isSound);
     }
 
-    const onButtonMusicClick = (volumeClick = props.soundValue, triggerMusic = props.triggerMusic, clickElement = props.clickElement) => {
-        clickElement(volumeClick, props.isSound);
+    const onButtonMusicClick = (triggerMusic = props.triggerMusic, clickElement = props.clickElement) => {
+        clickElement(props.soundValue, props.isSound);
         triggerMusic(!props.isMusic);
     }
     
@@ -33,7 +33,7 @@ const VolumeSettings = (props) => {
                 <button onClick={ () => onButtonMusicClick() } className={'material-icons ' + styles.btnTrigger.toString()}>{props.isMusic ? 'volume_off' : 'volume_up'}</button>
             </div>
             <div className={styles.btnClose}>
-                <NavLink onClick={ () => props.clickElement(props.soundValue, props.isSound ) } to="/" className={'material-icons ' + styles.icon.toString()}>close</NavLink>
+                <NavLink onClick={ () => props.clickElement(props.soundValue, props.isSound) } to="/home" className={'material-icons ' + styles.icon.toString()}>close</NavLink>
             </div>
         </div>
     );

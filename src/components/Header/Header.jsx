@@ -6,6 +6,7 @@ const Header = (props) => {
     return (
         <header className={styles.header}>
             <nav className={styles.navbar}>
+                <NavLink to="/list" className={styles.navbarItem} activeClassName={styles.activeLink}>Hotkeys</NavLink>
                 <NavLink to="/home" className={styles.navbarItem} activeClassName={styles.activeLink}>Home</NavLink>
                 <NavLink to="/volume" className={styles.navbarItem} activeClassName={styles.activeLink}>Volume Settings</NavLink>
                 <NavLink to="/game" className={styles.navbarItem} activeClassName={styles.activeLink}>Game Settings</NavLink>

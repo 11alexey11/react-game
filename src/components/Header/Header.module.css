@@ -18,6 +18,7 @@
     color: #FFFFFF;
 }
 
+.navbarItem:hover,
 .activeLink {
     color: #00BCD4;
 }

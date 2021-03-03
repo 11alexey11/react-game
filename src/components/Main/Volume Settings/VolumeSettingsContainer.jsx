@@ -2,7 +2,6 @@ import React from 'react';
 import { connect } from 'react-redux';
 import VolumeSettings from './VolumeSettings';
 import { changeSoundValue, changeMusicValue, triggerSound, triggerMusic, closeWindow } from '../../../redux/volume-reducer';
-import { clickElement } from '../../../redux/app-reducer';
 
 class VolumeSettingsContainer extends React.Component {
     render() {
@@ -34,9 +33,6 @@ const mapDispatchToProps = (dispatch) => {
         },
         closeWindow: (isClosedWindow) => {
             dispatch(closeWindow(isClosedWindow));
-        },
-        clickElement: (volumeClick, isSound) => {
-            dispatch(clickElement(volumeClick, isSound));
         }
     }
 };

@@ -6,13 +6,12 @@ import HeaderContainer from './components/Header/HeaderContainer';
 import Main from './components/Main/Main';
 
 function App(props) {
-  console.log(props);
   return (
     <div className='app-wrapper'>
       <SoundContainer />
       <MusicContainer />
       <HeaderContainer />
-      <Main />
+      <Main statistic={props.statistic} soundValue={props.soundValue} isSound={props.isSound} clickElement={props.clickElement}/>
       <Footer />
     </div>
   );

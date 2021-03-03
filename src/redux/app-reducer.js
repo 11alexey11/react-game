@@ -3,7 +3,8 @@ import click from '../assets/click.mp3';
 const CLICK_ELEMENT = 'CLICK_ELEMENT';
 
 const initialState = {
-    volumeClick: '100',
+    // statistic: JSON.parse(localStorage.getItem('statistic')),
+    soundValue: '100',
     isSound: false,
 }
 
@@ -12,12 +13,12 @@ const appReducer = (state = initialState, action) => {
         case CLICK_ELEMENT: {
             if (!action.isSound) {
                 const audio = new Audio(click);
-                audio.volume = Number(action.volumeClick) / 100;
+                audio.volume = Number(action.soundValue) / 100;
                 audio.play();
             }
             return {
                 ...state,
-                volumeClick: action.volumeClick,
+                soundValue: action.soundValue,
                 isSound: action.isSound
             }
         }
@@ -26,6 +27,6 @@ const appReducer = (state = initialState, action) => {
     }
 }
 
-export const clickElement = (volumeClick, isSound) => ({type: CLICK_ELEMENT, volumeClick, isSound});
+export const clickElement = (soundValue, isSound) => ({type: CLICK_ELEMENT, soundValue, isSound});
 
 export default appReducer;

@@ -10,14 +10,17 @@ class AppContainer extends React.Component {
 }
 
 const mapStateToProps = (state) => ({
-    volumeClick: state.volumeSettingsPage.soundValue,
+    soundValue: state.volumeSettingsPage.soundValue,
     isSound: state.volumeSettingsPage.isSound,
+    isZero: state.gameSettingsPage.isZero,
+    isLight: state.gameSettingsPage.isLight,
+    isHard: state.gameSettingsPage.isHard,
 });
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        clickElement: (volumeClick) => {
-            dispatch(clickElement(volumeClick));
+        clickElement: (soundValue, isSound) => {
+            dispatch(clickElement(soundValue, isSound));
         }
     }
 };
